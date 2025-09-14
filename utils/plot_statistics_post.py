@@ -46,7 +46,7 @@ def load_and_plot_statistics(pkl_path, save_dir):
 
 if __name__ == "__main__":
     # 设置PKL文件路径和保存目录
-    pkl_path = "/home/chenlb/GZSL/results/rubuttal/test300/training_stats.pkl"  # 替换为实际的PKL文件路径
-    save_dir = "/home/chenlb/GZSL/results/rubuttal/test300/"      # 替换为实际的保存目录
+    pkl_path = "/home/xxxx/GZSL/results/rubuttal/test300/training_stats.pkl"  # 替换为实际的PKL文件路径
+    save_dir = "/home/xxxx/GZSL/results/rubuttal/test300/"      # 替换为实际的保存目录
     
     load_and_plot_statistics(pkl_path, save_dir) 

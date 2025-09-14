@@ -35,7 +35,7 @@ class ResNet3D(nn.Module):
                     )
         
         net_dict = self.encoder.state_dict()
-        pretrain = torch.load("/home/chenlb/GZSL/results/resnet_18.pth")
+        pretrain = torch.load("/home/xxxx/GZSL/results/resnet_18.pth")
         pretrain_dict = {k: v for k, v in pretrain['state_dict'].items() if k in net_dict.keys()}
             
         net_dict.update(pretrain_dict)
@@ -128,7 +128,7 @@ class ResNet3D(nn.Module):
     
     def visualize_cam_3d(self, input_image, cam, pred_label, label, idx, name):
         
-        nib_data = nib.load(os.path.join("/mnt/chenlb/datasets/ADNIt/register2x", name))
+        nib_data = nib.load(os.path.join("/mnt/xxxx/datasets/ADNIt/register2x", name))
         affine = nib_data.affine
 
         image = nib_data.get_fdata()
@@ -177,7 +177,7 @@ class ResNet3D(nn.Module):
         overlay_nii.header.set_zooms(voxelsize)
 
         # 保存为 NIfTI 文件 (.nii)
-        output_path = f'/home/chenlb/adni_cam/{name}_{label}_dilated.nii'
+        output_path = f'/home/xxxx/adni_cam/{name}_{label}_dilated.nii'
         nib.save(overlay_nii, output_path)
 
         

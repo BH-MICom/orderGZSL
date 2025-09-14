@@ -14,11 +14,11 @@ logger = None
 
 fold = 4
 
-# pretrain_dir = f'/home/chenlb/GZSL/results/ADNI/zero-shot/1miss/pres18/fold{fold}/classification/'
+# pretrain_dir = f'/home/xxxx/GZSL/results/ADNI/zero-shot/1miss/pres18/fold{fold}/classification/'
 # # 选择这个dir的最后一个文件
 # pretrain_path = os.path.join(pretrain_dir, os.listdir(pretrain_dir)[-1])
 # print(pretrain_path)
-pretrain_path = '/home/chenlb/GZSL/results/ADNI/zero-shot/1miss/no_ordinal/fold4/h_0.6897_acc_0.8889_seen_0.9680_unseen_0.5357_115.pth'
+pretrain_path = '/home/xxxx/GZSL/results/ADNI/zero-shot/1miss/no_ordinal/fold4/h_0.6897_acc_0.8889_seen_0.9680_unseen_0.5357_115.pth'
 
 
 def main(logger, portion: str):

@@ -6,16 +6,16 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Model Configuration')
 
     # Base directories
-    parser.add_argument('--base_dir', type=str, default='/home/chenlb/GZSL', help='Base directory')
+    parser.add_argument('--base_dir', type=str, default='/home/xxxx/GZSL', help='Base directory')
     parser.add_argument('--result_dir', type=str, default='results', help='Results directory')
-    parser.add_argument('--sub_result_dir', type=str, default='/home/chenlb/GZSL/results/ADNI_tip/stage1_3', help='Sub result directory')
+    parser.add_argument('--sub_result_dir', type=str, default='/home/xxxx/GZSL/results/ADNI_xxx/stage1_3', help='Sub result directory')
     parser.add_argument('--log_dir', type=str, default='log', help='Log directory')
 
     # flexible settings
     parser.add_argument('--train_stage', type=int, default=1, help='0 means train features, 1 means train classifier')
     parser.add_argument('--fold', type=int, default=4, help='Fold number')
     parser.add_argument('--pre_train', type=bool, default=True, help='Wether to pretrain')
-    parser.add_argument('--pretrain_path', type=str, default="/home/chenlb24/GZSL/results/ADNI_tip/checkpoint200_0.pth", help='the model path of stage 0')
+    parser.add_argument('--pretrain_path', type=str, default="/home/xxxx24/GZSL/results/ADNI_xxx/checkpoint200_0.pth", help='the model path of stage 0')
     parser.add_argument('--pretrain_encoder', type=bool, default=True, help='Whether to use the encoder of pretrain model')
     parser.add_argument('--pretrain_encode_name', type=str, default='swin_transformer', help='the name of pretrain encoder')
     parser.add_argument('--ordinal_method', type=str, default='kl', help='the method of ordinal')
@@ -40,7 +40,7 @@ def parse_args():
 
     # Dataset settings
     parser.add_argument('--dataset', type=str, default='ADNI', help='Dataset')
-    parser.add_argument('--dataset_root', type=str, default='/mnt/chenlb/datasets/ADNI/generated_91_109_91', help='Dataset root')
+    parser.add_argument('--dataset_root', type=str, default='/mnt/xxxx/datasets/ADNI/generated_91_109_91', help='Dataset root')
     parser.add_argument('--dataset_ordinal', type=int, nargs='+', default=[0, 1, 2], help='Dataset ordinal order')
     parser.add_argument('--num_classes', type=int, default=3, help='Number of classes')
     parser.add_argument('--seen_classes_ordinal', type=int, nargs='+', default=[0, 2], help='Seen classes in ordinal')

@@ -135,8 +135,8 @@ def save_data(data, label, path):
         data_store.create_dataset('label', data=label)
     
 if __name__ == '__main__':
-    data_dir = "/mnt/chenlb/datasets/ZDFY/match"
-    out_dir = "/mnt/chenlb/datasets/ZDFY/5fold_selected_mni"
+    data_dir = "/mnt/xxxx/datasets/ZDFY/match"
+    out_dir = "/mnt/xxxx/datasets/ZDFY/5fold_selected_mni"
     os.makedirs(out_dir, exist_ok=True)
 
     process(data_dir, (96, 96, 64), out_dir)

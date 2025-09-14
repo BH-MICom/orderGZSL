@@ -20,7 +20,7 @@ def main(logger, portion: str):
     model = ResNet3D(config).to(device)
     
     model.load_state_dict(
-        torch.load('/home/chenlb/GZSL/results/ADNI/zero-shot/1miss/pres18/fold4/classification/h_0.8723_acc_0.8824_seen_0.8880_unseen_0.8571_67.pth')
+        torch.load('/home/xxxx/GZSL/results/ADNI/zero-shot/1miss/pres18/fold4/classification/h_0.8723_acc_0.8824_seen_0.8880_unseen_0.8571_67.pth')
     )
 
     model.requires_grad_(False)
@@ -74,7 +74,7 @@ def main(logger, portion: str):
     # 去除坐标轴等内容
     plt.axis('off')
     
-    plt.savefig('/home/chenlb/GZSL/results/tsne_2d2.png', bbox_inches='tight', dpi=300)
+    plt.savefig('/home/xxxx/GZSL/results/tsne_2d2.png', bbox_inches='tight', dpi=300)
     plt.show()
 
 if __name__ == '__main__':
